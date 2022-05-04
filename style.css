@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+body{
+  background-image: url('nebo.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+h1{
+  justify-content: center;
+  display: flex;
+  color: rgb(230, 230, 230);
+  font-family: 'Caveat', cursive;
+}
+p{
+  display: flex;
+  text-align: center;
+}
+.card{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+  margin: 10px 10px;
+  height: 150px;
+  width: 150px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s linear;
+  transform-style: preserve-3d;
+}
+.cards:hover {
+  transform: rotateY(-180deg);
+}
+.wrapper{
+  display: flex;
+  max-width: 670px;
+  max-height: 550px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+.oneRight,
+.twoRight,
+.threeRight,
+.oneLeft,
+.twoLeft,
+.threeLeft{
+  background-image: linear-gradient(rgb(208, 245, 210),rgb(208, 245, 222));
+  border: 2px solid white;
+  border-radius: 9px;
+  color: rgb(122, 122, 122);
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+}
+
+.fourRight,
+.fiveRight,
+.sixRight,
+.fourLeft,
+.fiveLeft,
+.sixLeft{
+  background-image: linear-gradient(rgb(210, 208, 245),rgb(245, 207, 255));
+  border: 2px solid white;
+  border-radius: 9px;
+  color: rgb(122, 122, 122);
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+}
+
+.sevenRight,
+.eightRight,
+.nineRight,
+.sevenLeft,
+.eightLeft,
+.nineLeft{
+  background-image: linear-gradient(rgb(208, 252, 247),rgb(208, 225, 245));
+  border: 2px solid white;
+  border-radius: 9px;
+  color: rgb(122, 122, 122);
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+}
+
+div[class*="Right"] {
+  z-index: 2;
+  transform: rotate(0deg);
+  backface-visibility: hidden;
+}
+
+div[class*="Left"] {
+  transform: rotateY(-180deg);
+  /*backface-visibility: hidden;*/
+}
+
+
+
+
+
+@media (max-width: 415px) {
+  .cards{
+    margin: 10px 10px;
+    height: 105px;
+    width: 105px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+    transform-style: preserve-3d;
+  }
+  .oneRight,
+  .twoRight,
+  .threeRight,
+  .oneLeft,
+  .twoLeft,
+  .threeLeft{
+    background-image: linear-gradient(rgb(208, 245, 210),rgb(208, 245, 222));
+    border: 2px solid white;
+    border-radius: 9px;
+    color: rgb(122, 122, 122);
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+  }
+
+  .fourRight,
+  .fiveRight,
+  .sixRight,
+  .fourLeft,
+  .fiveLeft,
+  .sixLeft{
+    background-image: linear-gradient(rgb(210, 208, 245),rgb(245, 207, 255));
+    border: 2px solid white;
+    border-radius: 9px;
+    color: rgb(122, 122, 122);
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+  }
+
+  .sevenRight,
+  .eightRight,
+  .nineRight,
+  .sevenLeft,
+  .eightLeft,
+  .nineLeft{
+    background-image: linear-gradient(rgb(208, 252, 247),rgb(208, 225, 245));
+    border: 2px solid white;
+    border-radius: 9px;
+    color: rgb(122, 122, 122);
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+  }
+
+}
+@media (max-width: 393px) {
+  .cards{
+    margin: 10px 10px;
+    height: 90px;
+    width: 90px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+    transform-style: preserve-3d;
+  }
+}
+@media (max-width: 347px) {
+  .cards{
+    margin: 10px 10px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s linear;
+    transform-style: preserve-3d;
+  }
+}
